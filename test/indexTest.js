@@ -76,7 +76,7 @@ describe( "submitData()", () => {
     nock( 'http://localhost:3000' )
       .post( '/users' )
       .replyWithError( {
-        message: message,
+        message: 'Unauthorized Access',
         code: '401',
       } )
 
